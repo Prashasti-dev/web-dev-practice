@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: myfont;
+    src: url(./NeueMachina-Regular_DQCmjH1st.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+    color: black;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;  
+}
+
+#nav{
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+#nav a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+#main>h1{
+    padding-left: 50px;
+    font-size: 220px;
+    font-weight: 500;
+}
+#bottomleft{
+    position: absolute;
+    width: 200px;
+    left: 5%;
+    bottom: 20%;
+}
+#bottomleft h3{
+    margin-top: 40px;   
+}
+#bottomleft p{
+    font-size: 17px;
+}
+h3{
+    margin-bottom: 10px;
+}
+#foot{
+     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    bottom: 0;
+    left: 0;
+    
+    font-weight:100;
+}
+#foot a{
+    text-decoration: none;
+    right: 10%;
+    padding-right: 25px;
+}
+#main>img{
+    position: absolute;
+}
+#main #img1{
+    height: 400px;
+    top: 40%;
+    left: 55%;
+    opacity: 0.9;
+ 
+}
+#main #img2{
+    height: 300px;
+    top: 50%;
+    left: 38%;
+}
+#main #img3{
+    height: 220px;
+    width: 182px;
+    top: 72%;
+    left: 49%;
+
+   
+}

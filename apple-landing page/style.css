@@ -1,0 +1,112 @@
+/* 
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(218, 125, 11);
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    background-color: #111112;
+    color:white;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+nav>h4{
+    font-weight: 300;
+}
+#center{
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_medium.jpg);
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    
+}
+#center>h1{
+font-weight: 500;
+font-size: 50px;
+}
+#center>h5{
+font-weight:100;
+font-size:30px;
+}
+
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+#links button{
+    background-color: #0077ED;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+   border: none;
+}
+#center img{
+width: 200px;
+}
+
+#links .buynow {
+    background-color: black;
+    color: #0077ED;
+    border: 2px solid #0077ED;
+  cursor: pointer;
+ 
+}
+#links .buynow:hover {
+  background-color: #0077ED;
+  color: white;
+  transform: scale(1.05);
+}
