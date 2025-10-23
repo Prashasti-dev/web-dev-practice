@@ -39,7 +39,7 @@ main {
   section.view1 {
     width: 100%;
     @include flex-column(1rem);
-    padding: 1rem;
+    padding: 0.5rem;
 
     .top {
       width: 100%;
@@ -76,6 +76,7 @@ main {
       button {
         width: fit-content;
         border: none;
+        
         padding: 0.5rem;
         border-radius: 0.3rem;
       }
@@ -85,7 +86,7 @@ main {
   section.view2 {
     @include flex-column(1rem);
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
 
     .top,
     .bottom {
@@ -111,7 +112,7 @@ main {
 
   section.view3{
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     @include flex-column(1rem);
 
         .top{
@@ -121,15 +122,138 @@ main {
                 border-radius: 0.7rem;
             }
         }
-        .bottom{
-            background-color: #1e1e1e;
-            padding: 1.5rem;
-            border-radius: 10px;   
-            @include flex-column(6rem);
+        .bottom {
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      @include flex-column(3rem);
 
+          P{
+            font-size: 1.2rem;
+          }
+
+      .text {
+        @include flex-column(0.7rem);
+
+        h2 {
+          font-weight: 350;
+          font-size: 3.2rem;
+          text-transform: uppercase;
+        }
+
+        p {
+          color: #908c8c;
+          font-size: 1.5rem;
+          font-weight: 200;
+          line-height: 1.5;
+        }
+      }
+
+      button {
+        width: fit-content;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+      }
+    }
+        .bottom>p{
+          text-transform: uppercase;
         }
   }
-}
+
+  section.view4{
+    width: 100%;
+    padding: 0.5rem;
+    @include flex-column(1rem);
+
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 0.7rem;
+            }
+        }
+        .bottom {
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      @include flex-column(3rem);
+
+          P{
+            font-size: 1.2rem;
+          }
+
+      .text {
+        @include flex-column(0.7rem);
+
+        h2 {
+          font-weight: 350;
+          font-size: 3.2rem;
+          text-transform: uppercase;
+        }
+
+        p {
+          color: #908c8c;
+          font-size: 1.5rem;
+          font-weight: 200;
+          line-height: 1.5;
+        }
+      }
+
+      button {
+        width: fit-content;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+      }
+    }
+        .bottom>p{
+          text-transform: uppercase;
+        }
+  }
+
+  section.view5{
+     display: flex;
+   width: 100%;
+   gap: 2rem;
+   padding: 0.5rem;
+
+   .card{
+    width: 100%;
+    background-image: url(./card1.webp);
+    aspect-ratio: 1/1;
+    background-size: cover;
+
+    @include flex-column(0rem);
+    justify-content: space-between; 
+    padding: 1rem;
+
+       .icon,
+       .bottom{
+            background-color: rgba(255, 255, 255, .05);
+            backdrop-filter:blur(2rem);
+                border: 1px solid rgba(255, 255, 255, .1);
+                padding: 0.5rem;
+       }
+       .icon{
+        width:fit-content;
+        border-radius: 50%;
+       }
+
+       .top{
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+       }
+       .bottom{
+        display: flex;
+        justify-content: space-between;
+       padding: 2rem 1rem;
+       }
+   }
+  }
+  }
+
 
 // ✅ Responsive
 @media (min-width: 900px) {
@@ -165,6 +289,51 @@ main {
 
     section.view2{
         flex-direction: row;
+    }
+    
+    section.view3{
+      flex-direction: row-reverse;
+
+        .top,.bottom{
+          width: 50%;
+        }
+        .bottom{
+          justify-content: space-between;
+          padding: 4rem;
+
+           .paragraphs{
+            display: flex;
+            gap: 2.5rem;
+
+              p{
+                font-size: 1.2rem;
+                font-weight: 400;
+              }
+              
+           }
+        }
+    }
+
+    section.view4{
+      flex-direction: row;
+      .top,.bottom{
+        width: 100%;
+      }
+      .bottom{
+        justify-content: space-between;
+        padding: 4rem;
+
+         .paragraphs{
+        display: flex;
+        gap: 2.5rem;
+
+        p{
+          font-size: 1.2rem;
+                font-weight: 400;
+        }
+      }
+      }
+     
     }
     
   }
