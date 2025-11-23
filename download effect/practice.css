@@ -1,0 +1,39 @@
+*{margin: 0;
+padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    height: 100px;
+    width:500px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.outer{
+    height: 13px;
+    background-color: rgb(194, 189, 189);
+    border-radius: 10px;
+}
+.inner{
+width: 50%;
+height: 100%;
+background-color: green;
+border-radius: 10px;
+}
+button{
+    background-color: green;
+    height: 30px;
+    width: 100px;
+    color: white;font-size: 15px;
+    border-radius: 10px;
+    border: none;
+
+}

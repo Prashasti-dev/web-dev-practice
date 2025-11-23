@@ -59,8 +59,8 @@ main section.view1 .bottom .text {
   gap: 0.7rem;
 }
 main section.view1 .bottom .text h1 {
-  font-weight: 300;
-  font-size: 2.5rem;
+  font-weight: 400;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 main section.view1 .bottom .text p {
@@ -73,8 +73,23 @@ main section.view1 .bottom button {
   width: -moz-fit-content;
   width: fit-content;
   border: none;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 1rem;
   padding: 0.5rem;
   border-radius: 0.3rem;
+}
+main section.view1 .bottom button .arrow i {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
 }
 main section.view2 {
   display: flex;
