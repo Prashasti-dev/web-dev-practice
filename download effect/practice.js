@@ -12,7 +12,7 @@ btn.addEventListener('click',function(){
     // console.log(num);
 
 
-        var int =setInterval(()=>{
+        int =setInterval(()=>{
              grow++;
              h2.innerHTML=grow+'%';
              inner.style.width=grow+'%';
