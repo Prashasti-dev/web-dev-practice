@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   
+}
+body{
+    overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background: black;
+}
+
+  .card{
+  background-color: white;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+   position: relative; 
+
+}
+.card div{
+    overflow: hidden;
+    position: relative;
+}
+/* image ke andar hi like button udd ke bahar chli jayegi */
+
+.card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card h2{
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+.card i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    opacity: 0.9;
+
+    transform: translate(-50%, -50%) scale(0) rotate(-50deg);
+    transition: all 0.4s cubic-bezier(.65,1,.77,1.44);/* efeectively centering on its parent elemnt and initial scale size 0 after cikc it will increase*/
+
+    display: inline-block;
+    background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
